@@ -55,7 +55,7 @@ void lee(Point start, Point end) {
 
             float T = 1.0;
             if (i % 2 == 0) {
-                T = 1.4;
+                T = 0.4;
             }
 
             if (error(next)) {
@@ -64,7 +64,7 @@ void lee(Point start, Point end) {
                     queue[rear++] = next;
 
                     if (next.x == end.x && next.y == end.y) {
-                        printf("=================Метки после ли:=================\n");
+                        printf("=================ГЊГҐГІГЄГЁ ГЇГ®Г±Г«ГҐ Г«ГЁ:=================\n");
                         for (int i = 0; i < ROWS; i++) {
                             for (int j = 0; j < COLS; j++) {
                                 printf("%.1f\t", copy[i][j]);
@@ -72,7 +72,7 @@ void lee(Point start, Point end) {
                             printf("\n");
                         }
 
-                        printf("Кратчайшее расстояние до точки (%d,%d): %.1f\n", end.x, end.y, copy[end.x][end.y]);
+                        printf("ГЉГ°Г ГІГ·Г Г©ГёГҐГҐ Г°Г Г±Г±ГІГ®ГїГ­ГЁГҐ Г¤Г® ГІГ®Г·ГЄГЁ (%d,%d): %.1f\n", end.x, end.y, copy[end.x][end.y]);
                         return;
                     }
                 }
@@ -80,7 +80,7 @@ void lee(Point start, Point end) {
         }
     }
 
-    printf("Путь до точки (%d,%d) не найден\n", end.x, end.y);
+    printf("ГЏГіГІГј Г¤Г® ГІГ®Г·ГЄГЁ (%d,%d) Г­ГҐ Г­Г Г©Г¤ГҐГ­\n", end.x, end.y);
 }
 
 int main() {
